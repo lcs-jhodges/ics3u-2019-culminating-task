@@ -9,7 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Pengu extends Actor
 {
     private int speed = 7;
-    
+    private int vSpeed = 0;
+    private int acceleration = 2;
     /**
      * Act - do whatever the Pengu wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -17,6 +18,7 @@ public class Pengu extends Actor
     public void act() 
     {
         checkKeys();
+        fall();
     }
 
     private void checkKeys()
@@ -29,6 +31,17 @@ public class Pengu extends Actor
             setImage("pengu-right.png");
             moveRight();
         }
+    }
+
+    public boolean onGround()
+    {
+        Actor under = getOneObjectAtOffset(
+    }
+
+    public void fall()
+    {
+        setLocation(getX(), getY() + vSpeed);
+        vSpeed = vSpeed + acceleration;
     }
 
     public void moveRight()
