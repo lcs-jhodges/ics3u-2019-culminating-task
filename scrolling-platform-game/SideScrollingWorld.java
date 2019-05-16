@@ -15,6 +15,7 @@ public class SideScrollingWorld extends World
      */    
     // Tile size in pixels for world elements (blocks, clouds, etc)
     private static final int TILE_SIZE = 32;
+    private static final int HALF_TILE_SIZE = TILE_SIZE / 2;
 
     // World size constants
     private static final int VISIBLE_WIDTH = 640;
@@ -52,12 +53,25 @@ public class SideScrollingWorld extends World
      */
     private void setup()
     {
-        addLeftGround();
-        addFences();
-        addMetalPlateSteps();
-        addClouds();
-        addRightGround();
+        // addLeftGround();
+        // addFences();
+        // addMetalPlateSteps();
+        // addClouds();
+        // addRightGround();
         addHero();
+        
+        
+        // Add metal plates in upper left corner
+        for (int i = 0; i <= 4; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 4 * TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
     }
 
     /**
@@ -176,7 +190,7 @@ public class SideScrollingWorld extends World
         theHero = new Hero(initialX);
 
         // Add hero in bottom left corner of screen
-        addObject(theHero, initialX, getHeight() / 4 * 3);
+        addObject(theHero, initialX, 3 * TILE_SIZE);
     }
 
     /**
