@@ -53,11 +53,10 @@ public class SideScrollingWorld extends World
      */
     private void setup()
     {
-        // addLeftGround();
-        // addFences();
-        // addMetalPlateSteps();
-        // addClouds();
-        // addRightGround();
+        
+        //addFences();
+        //addMetalPlateSteps();
+        //addClouds();
         addHero();
         
         
@@ -72,31 +71,39 @@ public class SideScrollingWorld extends World
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
         }
-    }
-
-    /**
-     * Add blocks to create the ground to walk on at bottom-left of scrollable world.
-     */
-    private void addLeftGround()
-    {
-        // How many tiles will cover the bottom of the initial visible area of screen?
-        final int tilesToCreate = getWidth() / TILE_SIZE;
-
-        // Loop to create and add the tile objects
-        for (int i = 0; i < tilesToCreate; i += 1)
+        for (int i = 5; i <= 10; i += 1)
         {
-            // Add ground objects at bottom of screen
-            // NOTE: Actors are added based on their centrepoint, so the math is a bit trickier.
-            int x = i * TILE_SIZE + TILE_SIZE / 2;
-            int y = getHeight() - TILE_SIZE / 2;
-
-            // Create a ground tile
-            Ground groundTile = new Ground(x, y);
-
-            // Add the objects
-            addObject(groundTile, x, y);
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 8 * TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 12; i <= 15; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 10 * TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = -1; i <= 100; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 4 * TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            Ground plate = new Ground(x, y);
+            addObject(plate, x, 460);
         }
     }
+
+   
 
     /**
      * Add some fences at left and right side.
