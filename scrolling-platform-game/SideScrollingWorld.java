@@ -60,7 +60,7 @@ public class SideScrollingWorld extends World
         addHero();
         
         
-        // Add metal plates in upper left corner
+        // Add metal plates above the ground level
         for (int i = 0; i <= 4; i += 1)
         {
             //Location
@@ -91,7 +91,7 @@ public class SideScrollingWorld extends World
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
         }
-        for (int i = -1; i <= 100; i += 1)
+        for (int i = -1; i <= 46; i += 1)
         {
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
@@ -100,6 +100,196 @@ public class SideScrollingWorld extends World
             // Create and each object
             Ground plate = new Ground(x, y);
             addObject(plate, x, 460);
+        }
+        for (int i = 15; i <= 19; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 4* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 9; i <= 14; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 6* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 20; i <= 26; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 8* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 22; i <= 23; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 3* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 18; i <= 19; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 10* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 28; i <= 31; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 7* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 31; i <= 33; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 9* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 35; i <= 35; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 4* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 30; i <= 34; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 3* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 39; i <= 42; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 5* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 38; i <= 43; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 8* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 42; i <= 47; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 10* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 43; i <= 46; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 3* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 48; i <= 48; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 5* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 51; i <= 51; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 8* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 53; i <= 53; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 3* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 53; i <= 54; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 10* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 47; i <= 49; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 11* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
+        }
+        for (int i = 56; i <= 56; i += 1)
+        {
+            //Location
+            int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+            int y = 4* TILE_SIZE + HALF_TILE_SIZE;
+            
+            // Create and each object
+            MetalPlate plate = new MetalPlate(x, y);
+            addObject(plate, x, y);
         }
     }
 
