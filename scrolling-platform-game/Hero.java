@@ -101,6 +101,10 @@ public class Hero extends Actor
         {
             checkGameOver();
         }
+        if (isTouching(Monster.class))
+        {
+            Greenfoot.stop();
+        }
     }
 
     /**

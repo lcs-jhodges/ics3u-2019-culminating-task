@@ -34,6 +34,8 @@ public class SideScrollingWorld extends World
     /**
      * Constructor for objects of class SideScrollingWorld.
      */
+
+   
     public SideScrollingWorld()
     {    
         // Create a new world with 640x480 cells with a cell size of 1x1 pixels.
@@ -53,20 +55,19 @@ public class SideScrollingWorld extends World
      */
     private void setup()
     {
-        
+
         //addFences();
         //addMetalPlateSteps();
         //addClouds();
         addHero();
-        
-        
+
         // Add metal plates above the ground level
         for (int i = 0; i <= 4; i += 1)
         {
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 4 * TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -76,7 +77,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 8 * TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -86,7 +87,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 10 * TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -96,7 +97,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 4* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -106,7 +107,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 6* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -116,7 +117,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 8* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -126,7 +127,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 3* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -136,7 +137,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 10* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -146,7 +147,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 7* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -156,7 +157,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 9* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -166,7 +167,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 4* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -176,7 +177,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 3* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -186,7 +187,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 5* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -196,7 +197,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 8* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -206,18 +207,18 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 10* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
         }
-        
+
         for (int i = 48; i <= 48; i += 1)
         {
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 5* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -227,7 +228,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 8* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -237,7 +238,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 3* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -247,7 +248,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 10* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -257,7 +258,7 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 11* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
@@ -267,26 +268,29 @@ public class SideScrollingWorld extends World
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 4* TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             MetalPlate plate = new MetalPlate(x, y);
             addObject(plate, x, y);
         }
-        
+
         //Ground for the bottom floor
         for (int i = -1; i <= 38; i += 1)
         {
             //Location
             int x = TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
             int y = 4 * TILE_SIZE + HALF_TILE_SIZE;
-            
+
             // Create and each object
             Ground plate = new Ground(x, y);
             addObject(plate, x, 460);
         }
+        
+        //Add monsters into the world
+        Monster monster = new Monster();
+        addObject(monster, 230, 228);
     }
 
-   
 
     /**
      * Add some fences at left and right side.
@@ -366,6 +370,9 @@ public class SideScrollingWorld extends World
      */
     public void act()
     {
+        
+        
+
     }
 
     /**
