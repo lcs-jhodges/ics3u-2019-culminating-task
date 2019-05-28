@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Monster
+comment0.text=\n\ Write\ a\ description\ of\ class\ Monster\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=speed
+comment1.target=void\ moveLeft(int)
+comment1.text=\n\ Constructor\n\ \n\ This\ runs\ once.\n\n\n\ \ \ \ /**\n\ Move\ to\ left\ (to\ make\ hero\ look\ like\ they\ are\ moving\ right)\n\n\n\ \ \ \ /**\n\ Move\ to\ right\ (to\ make\ hero\ look\ like\ they\ are\ moving\ left)\n\n\ \ \ \ \n\ \ \ \ /**\n\ Move\ to\ left\ (to\ make\ hero\ look\ like\ they\ are\ moving\ right)\n
+comment2.params=speed
+comment2.target=void\ moveRight(int)
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\n\ Act\ -\ do\ whatever\ the\ Monster\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+numComments=4

@@ -396,7 +396,14 @@ public class Hero extends Actor
                 // FarAwayItems move left to make hero appear to move right
                 farAwayItem.moveLeft(deltaX / 4);
             }
+            // Move all the platform objects to make it look like hero is moving
+            List<Monster> monsters = world.getObjects(Monster.class);
 
+            for (Monster monster : monsters)
+            {
+                // Platforms move left to make hero appear to move right
+                monster.moveLeft(deltaX);
+            }
         }   
 
     }
@@ -499,7 +506,14 @@ public class Hero extends Actor
                 // FarAwayItems move right to make hero appear to move left
                 farAwayItem.moveRight(deltaX / 4);
             }
+            // Move all the platform objects to make it look like hero is moving
+            List<Monster> monsters = world.getObjects(Monster.class);
 
+            for (Monster monster : monsters)
+            {
+                // Platforms move left to make hero appear to move right
+                monster.moveRight(deltaX);
+            }
         } 
 
     }
