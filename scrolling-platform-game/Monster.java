@@ -15,7 +15,7 @@ public class Monster extends Decoration
      */ 
 
     private GreenfootImage standingStillImages[];
-    private static final int STANDING_ANIMATION_DELAY = 8;
+    private static final int STANDING_ANIMATION_DELAY = 15;
     private static final int COUNT_OF_STANDING_IMAGES = 3;
     private int standingFrames;
 
