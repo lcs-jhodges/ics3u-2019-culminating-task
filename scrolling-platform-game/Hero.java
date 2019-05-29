@@ -101,10 +101,7 @@ public class Hero extends Actor
         {
             checkGameOver();
         }
-        if (isTouching(Monster.class))
-        {
-            Greenfoot.stop();
-        }
+        
     }
 
     /**
@@ -535,7 +532,8 @@ public class Hero extends Actor
         int offScreenVerticalPosition = (world.getHeight() + this.getImage().getHeight() / 2);
 
         // Off bottom of screen?
-        if (this.getY() > offScreenVerticalPosition)
+        if (this.getY() > offScreenVerticalPosition ||
+                isTouching(Monster.class))
         {
             // Remove the hero
             isGameOver = true;
@@ -545,5 +543,6 @@ public class Hero extends Actor
             // Tell the user game is over
             world.showText("GAME OVER", world.getWidth() / 2, world.getHeight() / 2);
         }
+        
     }
 }

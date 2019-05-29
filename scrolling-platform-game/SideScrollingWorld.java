@@ -35,7 +35,6 @@ public class SideScrollingWorld extends World
      * Constructor for objects of class SideScrollingWorld.
      */
 
-   
     public SideScrollingWorld()
     {    
         // Create a new world with 640x480 cells with a cell size of 1x1 pixels.
@@ -285,69 +284,10 @@ public class SideScrollingWorld extends World
             Ground plate = new Ground(x, y);
             addObject(plate, x, 460);
         }
-        
+
         //Add monsters into the world
         Monster monster = new Monster();
         addObject(monster, 230, 228);
-    }
-
-
-    /**
-     * Add some fences at left and right side.
-     */
-    private void addFences()
-    {
-        // Three fences on left side of world
-        int x = TILE_SIZE / 2 + TILE_SIZE * 5;
-        int y = VISIBLE_HEIGHT - TILE_SIZE / 2 - TILE_SIZE;
-        Fence fence1 = new Fence(x, y);
-        addObject(fence1, x, y);
-
-        x = TILE_SIZE / 2 + TILE_SIZE * 6;
-        y = VISIBLE_HEIGHT - TILE_SIZE / 2 - TILE_SIZE;        
-        Fence fence2 = new Fence(x, y);
-        addObject(fence2, x, y);
-
-        x = TILE_SIZE / 2 + TILE_SIZE * 7;
-        y = VISIBLE_HEIGHT - TILE_SIZE / 2 - TILE_SIZE;
-        Fence fence3 = new Fence(x, y);
-        addObject(fence3, x, y);
-
-        // Two fences on right side of world
-        x = SCROLLABLE_WIDTH - TILE_SIZE / 2 - TILE_SIZE * 3;
-        y = VISIBLE_HEIGHT / 2;
-        Fence fence4 = new Fence(x, y);
-        addObject(fence4, x, y);
-
-        x = SCROLLABLE_WIDTH - TILE_SIZE / 2 - TILE_SIZE * 4;
-        y = VISIBLE_HEIGHT / 2;
-        Fence fence5 = new Fence(x, y);
-        addObject(fence5, x, y);
-    }
-
-    /**
-     * Add steps made out of metal plates leading to end of world.
-     */
-    private void addMetalPlateSteps()
-    {
-        // How many plates total?
-        final int COUNT_OF_METAL_PLATES = 20;
-        final int PLATES_PER_GROUP = 4;
-
-        // Add groups of plates
-        for (int i = 0; i < COUNT_OF_METAL_PLATES / PLATES_PER_GROUP; i += 1)
-        {
-            // Group of four metal plates all at same y position
-            int y = VISIBLE_HEIGHT - TILE_SIZE / 2 * 3 - i * TILE_SIZE;
-
-            // Add the individual plates in a given group
-            for (int j = 0; j < PLATES_PER_GROUP; j += 1)
-            {
-                int x = VISIBLE_WIDTH + TILE_SIZE * 2 + TILE_SIZE * (i + j) + TILE_SIZE * 5 * i;
-                MetalPlate plate = new MetalPlate(x, y);
-                addObject(plate, x, y);
-            }
-        }
     }
 
     /**
@@ -370,11 +310,8 @@ public class SideScrollingWorld extends World
      */
     public void act()
     {
-        
-        
 
     }
-
     /**
      * Add the hero to the world.
      */
