@@ -19,7 +19,6 @@ public class Monster extends Decoration
     private static final int COUNT_OF_STANDING_IMAGES = 3;
     private int standingFrames;
 
-   
     /**
      * Constructor
      * 
@@ -72,5 +71,29 @@ public class Monster extends Decoration
     public void act() 
     {
         // Add your action code here.
-    }    
-}
+        animateStanding();
+    }
+
+    private void animateStanding()
+    {
+        // Track walking animation frames
+        standingFrames += 1;
+
+        // Get current animation stage
+        int stage = standingFrames / STANDING_ANIMATION_DELAY;
+
+        // Animate
+        if (stage < standingStillImages.length)
+        {
+            // Set image for this stage of the animation
+            setImage(standingStillImages[stage]);
+
+        }
+        else
+        {
+            // Start animation loop from beginning
+            standingFrames = 0;
+        }
+    }
+}    
+

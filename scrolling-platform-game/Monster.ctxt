@@ -12,4 +12,6 @@ comment3.target=void\ moveRight(int)
 comment4.params=
 comment4.target=void\ act()
 comment4.text=\n\ Act\ -\ do\ whatever\ the\ Monster\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
-numComments=5
+comment5.params=
+comment5.target=void\ animateStanding()
+numComments=6
