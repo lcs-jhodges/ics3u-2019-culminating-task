@@ -441,7 +441,7 @@ public class SideScrollingWorld extends World
         int x = 600;
         int y = Greenfoot.getRandomNumber(480);
         
-        if (frames % 60 ==0 && isGameOver == false)
+        if (frames % 80 ==0 && isGameOver == false)
         {
             addObject(new Shuriken(x,y),x,y);
         }

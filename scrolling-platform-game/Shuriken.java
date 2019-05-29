@@ -52,7 +52,7 @@ public class Shuriken extends Decoration
     {
         // Add your action code here.
         animateShuriken();
-        move(-5);
+        move(-3);
     }    
 
     private void animateShuriken()
