@@ -31,6 +31,7 @@ public class SideScrollingWorld extends World
     // Track whether game is on
     private boolean isGameOver;
 
+    private int frames =0;
     // backgroundMusic
     GreenfootSound backgroundMusic;
 
@@ -330,13 +331,13 @@ public class SideScrollingWorld extends World
 
         Monster monster10 = new Monster(230, 228);
         addObject(monster10, 1000, 197);
-        
+
         Monster monster11 = new Monster(230, 228);
         addObject(monster11, 1169, 100);
-        
+
         Monster monster12 = new Monster(400, 163);
         addObject(monster12, 999, 419);
-        
+
         Monster monster13 = new Monster(400, 163);
         addObject(monster13, 1200, 419);
     }
@@ -361,7 +362,8 @@ public class SideScrollingWorld extends World
      */
     public void act()
     {
-
+        addShuriken();
+        frames++;
     }
 
     /**
@@ -432,6 +434,17 @@ public class SideScrollingWorld extends World
     public void setGameOver()
     {
         isGameOver = true;
+    }
+
+    private void addShuriken()
+    {
+        int x = 600;
+        int y = Greenfoot.getRandomNumber(480);
+        
+        if (frames % 60 ==0 && isGameOver == false)
+        {
+            addObject(new Shuriken(x,y),x,y);
+        }
     }
 }
 

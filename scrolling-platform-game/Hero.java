@@ -519,7 +519,8 @@ public class Hero extends Actor
 
         // Off bottom of screen?
         if (this.getY() > offScreenVerticalPosition ||
-                isTouching(Monster.class))
+                isTouching(Monster.class) ||
+                isTouching(Shuriken.class))
         {
             // Remove the hero
             isGameOver = true;
