@@ -301,8 +301,14 @@ public class SideScrollingWorld extends World
         }
 
         //Add monsters into the world
-        Monster monster = new Monster();
-        addObject(monster, 230, 228);
+        Monster monster1 = new Monster();
+        addObject(monster1, 230, 228);
+        
+        Monster monster2 = new Monster();
+        addObject(monster2, 470, 293);
+        
+        Monster monster3 = new Monster();
+        addObject(monster3, 400, 163);
     }
 
     /**
