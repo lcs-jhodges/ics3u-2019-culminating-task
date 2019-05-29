@@ -31,6 +31,9 @@ public class SideScrollingWorld extends World
     // Track whether game is on
     private boolean isGameOver;
 
+    // backgroundMusic
+    GreenfootSound backgroundMusic;
+
     /**
      * Constructor for objects of class SideScrollingWorld.
      */
@@ -47,6 +50,18 @@ public class SideScrollingWorld extends World
 
         // Game on
         isGameOver = false;
+
+        // Load the background music
+        backgroundMusic = new GreenfootSound("music.mp3");
+
+    }
+
+    /**
+     * Is called when the 'Run' button is pressed.
+     */
+    public void started()
+    {
+        backgroundMusic.playLoop();
     }
 
     /**
@@ -312,6 +327,7 @@ public class SideScrollingWorld extends World
     {
 
     }
+
     /**
      * Add the hero to the world.
      */
